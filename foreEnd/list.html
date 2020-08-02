@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common2.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1923178_wku4xkr223.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/showRecommod.js"></script>
+</head>
+<body>
+    <!-- 1. 顶部导航栏1 -->
+    <div class="topNav1">
+        <div class="wrap clearfix">
+            <!-- 1.1. 顶部左边导航栏 -->
+            <ul class="topNav1_navLeft">
+                <li>
+                    <a href="#1">
+                        <span>网站导航</span>
+                        <span class="arrowBtn iconfont icon-down"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <span>商家入驻</span>
+                        <span class="arrowBtn iconfont icon-down"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <span>客户服务</span>
+                        <span class="arrowBtn iconfont icon-down"></span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 1.2. 地址 -->
+            <div class="topNav1_address">
+                <span class="topNav1_address_icon iconfont icon-dizhi"></span>
+                <select name="address" class="selectAddress">
+                    <option value="beijing" selected>北京</option>
+                </select>
+            </div>
+            <!-- 1.3. 登录注册 -->
+            <ul class="topNav1_registerAndLogin">
+                <li>
+                    <a href="./login.html">请登录</a>
+                </li>
+                <li>
+                    <a href="./register.html" class="fontColor">注册有礼</a>
+                </li>
+            </ul>
+            <!-- 1.4. 顶部右边边导航栏 -->
+            <ul class="topNav1_navRight">
+                <li>
+                    <a href="#1">
+                        <span>我的订单</span>
+                        <span class="arrowBtn iconfont icon-down"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <span>我的易购</span>
+                        <span class="arrowBtn iconfont icon-down"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <span>小优会员</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1" class="fontColor">
+                        <span class = "cartIcon iconfont icon-gouwuchekong"></span>
+                        <span>购物车</span>
+                        <span class = "num">0</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <span>易付宝</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <span>企业采购</span>
+                        <span class="arrowBtn iconfont icon-down"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <span>手机小优</span>
+                        <span class="arrowBtn iconfont icon-down"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 2. 顶部导航栏2 -->
+    <div class="topNav2">
+        <div class="wrap">
+            <!-- 2.1. 顶部导航栏2上部分 -->
+            <div class="topNav2_top clearfix">
+                <a href="./index.html" class="logo fl">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+                <!-- 2.1.1 顶部导航栏2上部分右边 -->
+                <div class="fl topNav2_top_right">
+                    <!-- 2.1.1.1 顶部导航栏2上部分右边的搜索框 -->
+                    <div class="topNav2_top_right_search">
+                        <input type="text" class="topNav2_top_right_search_input">
+                        <button class="topNav2_search_button">
+                            搜索
+                        </button>
+                        <p class="topNav2_top_right_search_placeholder">
+                            <span class="iconfont icon-fangdajing"></span>
+                            跨店每300减30
+                        </p>
+                    </div>
+                    <!-- 2.1.1.1 顶部导航栏2上部分右边的导航栏 -->
+                    <ul class="topNav2_top_right_shopsNav ">
+                        <li>
+                            <a href="#1">手机</a>
+                        </li>
+                        <li>
+                            <a href="#1">电动牙刷</a>
+                        </li>
+                        <li>
+                            <a href="#1">电视</a>
+                        </li>
+                        <li>
+                            <a href="#1">海尔空调 </a>
+                        </li>
+                        <li>
+                            <a href="#1">洗衣机 </a>
+                        </li>
+                        <li>
+                            <a href="#1">茅台 </a>
+                        </li>
+                        <li>
+                            <a href="#1">热水器 </a>
+                        </li>
+                        <li>
+                            <a href="#1">ipad </a>
+                        </li>
+                        <li>
+                            <a href="#1">微波炉 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 2.2. 顶部导航栏2底部分 -->
+            <div class="topNav2_bottom clearfix">
+                <div class="topNav2_bottom_allBtn fl">
+                    <span class="iconfont icon-iconfontzhizuobiaozhun45"></span>
+                    <span>全部商品分类</span>
+                </div>
+                <!-- 2.2.2. 顶部导航栏2底部分的导航栏 -->
+                <ul class="topNav2_bottom_shopNav fl clearfix">
+                    <li>
+                        <a href="#1">限时抢购</a>
+                    </li>
+                    <li>
+                        <a href="#1">红孩子</a>
+                    </li>
+                    <li>
+                        <a href="#1">小U超市</a>
+                    </li>
+                    <li>
+                        <a href="#1">电器城</a>
+                    </li>
+                    <li>
+                        <a href="#1">生活家电</a>
+                    </li>
+                    <li>
+                        <a href="#1">时尚服饰</a>
+                    </li>
+                    <li>
+                        <a href="#1">金融</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 3. 面包屑导航栏 -->
+    <ul class="breadcrumbTrail wrap clearfix">
+        <li>
+            <a href="#1">首页&gt;</a>
+        </li>
+        <li>
+            <a href="#1"></a>
+        </li>
+        <li>
+            <a href="#1"></a>
+        </li>
+        <li class="active">
+            <a href="#1">
+                <button>x</button>
+            </a>
+        </li>
+    </ul>
+    <!-- 4. 商品类型菜单 -->
+    <div class="goodsTypeMenu wrap">
+        <div class="goodsTypeMnu_item clearfix">
+            <div class="title">
+                <span class="iconfont icon-ic_arrow_r"></span>
+                一级分类
+            </div>
+            <ul class="clearfix fl" id="cateFirst">
+                <!--<li>惠普</li>
+                <li>长城</li>
+                <li>三星</li>
+                <li>小米</li>
+                <li>康佳</li>
+                <li>海信</li>
+                <li>长城</li>
+                <li>TCL</li>
+                <li>东芝</li>
+                <li>松下</li>
+                <li>创维</li>-->
+            </ul>
+            <div class="goodsTypeMnu_item_more">更多 <span class="iconfont icon-xiangxiajiantou1"></span> </div>
+        </div>
+        <div class="goodsTypeMnu_item clearfix">
+            <div class="title">
+                <span class="iconfont icon-ic_arrow_r"></span>
+                二级分类
+            </div>
+            <ul class="clearfix fl" id="cateSecond">
+               <!-- <li>4k超清</li>
+                <li>曲面</li>
+                <li>人工智能</li>
+                <li>大屏</li>
+                <li>超薄</li>
+                <li>全面屏</li>
+                <li>QLED</li>
+                <li>商业显示</li>
+                <li>东芝</li>
+                <li>松下</li>
+                <li>创维</li>
+                <li>创维</li>-->
+            </ul>
+            <div class="goodsTypeMnu_item_more">更多 <span class="iconfont icon-xiangxiajiantou1"></span> </div>
+        </div>
+        <div class="goodsTypeMnu_item clearfix">
+            <div class="title">
+                <span class="iconfont icon-ic_arrow_r"></span>
+                三级分类
+            </div>
+            <ul class="clearfix fl" id="cateThired">
+              <!--  <li>2m以下</li>
+                <li>2m-2.5m</li>
+                <li>2.5m-3m</li>-->
+            </ul>
+            <div class="goodsTypeMnu_item_more">更多 <span class="iconfont icon-xiangxiajiantou1"></span> </div>
+        </div>
+       <!-- <div class="goodsTypeMnu_item clearfix">
+            <div class="title">
+                <span class="iconfont icon-ic_arrow_r"></span>
+                屏幕尺寸
+            </div>
+            <ul class="clearfix fl">
+                <li>32英寸以下</li>
+                <li>39-45英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+                <li>55英寸</li>
+            </ul>
+            <div class="goodsTypeMnu_item_more">更多 <span class="iconfont icon-xiangxiajiantou1"></span> </div>
+        </div>
+        <div class="goodsTypeMnu_item clearfix">
+            <div class="title">
+                <span class="iconfont icon-ic_arrow_r"></span>
+                高级选项
+            </div>
+            <ul class="clearfix fl">
+                <li>分辨率</li>
+                <li>处理器</li>
+                <li>音效</li>
+                <li>HDR</li>
+                <li>USB</li>
+                <li>音频输出</li>
+            </ul>
+            <div class="goodsTypeMnu_item_more">更多 <span class="iconfont icon-xiangxiajiantou1"></span> </div>
+        </div>-->
+    </div>
+    <!-- 5. 商品推荐及展示 -->
+    <div class="goodsRecomAndShow wrap clearfix">
+        <!-- 5.1. 商品详情及展示 -- 推荐 -->
+        <div class="recommond fl">
+            <h3 class="recommond_title">商品推荐</h3>
+            <ul class="recommond_goodsShow">
+                <!-- <li>
+                     <a href="#1">
+                         <img src="" alt="">
+                         <p class="goodsName"></p>
+                         <p class="price"></p>
+                     </a>
+                 </li>-->
+            </ul>
+        </div>
+        <!-- 5.2. 商品详情及推荐 -- 展示 -->
+        <div class="show fr">
+            <div class="show_top clearfix">
+                <ul class="show_top_nav fl">
+                    <li class="active" arg="zonghe">综合</li>
+                    <li arg="new_status">新品</li>
+                    <li arg="sales_num">销量 <span class="iconfont icon-xiangxiajiantou"></span></li>
+                    <li arg="goods_price">价格 <span class="iconfont icon-xiangshangjiantou"></span></li>
+                </ul>
+                <div class="show_top_rignt fr">
+                   <p class="fl">
+                       共<span class="num">614</span>件商品
+                   </p>
+                    <div class="show_top_rignt_pageBtn fr">
+                        <span class="leftBtn iconfont icon-jiantou2"></span>
+                        <span class="prePage">1</span>/ <span class="pageTotal">11</span>
+                        <span class="rightBtn iconfont icon-jiantou"></span>
+                    </div>
+                </div>
+            </div>
+            <ul class="show_goodsList clearfix">
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="active" >-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="active" >-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="active" >-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li class="active" >-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#1">-->
+<!--                        <img src="./images/list/showlist_01.jpg" alt="">-->
+<!--                        <p class="price">￥4999.00</p>-->
+<!--                        <p class="goodsName">海信 电视机 超薄屏幕, 护眼防蓝光</p>-->
+<!--                        <p class="tag">不要错过, 不要辜负</p>-->
+<!--                        <p class="commentCount">已有 <span>3.2万<sup>+</sup></span>人评价</p>-->
+<!--                        <div>-->
+<!--                            <div class="addCartBtn fl">-->
+<!--                                <span class="iconfont icon-gouwuche"></span>-->
+<!--                                加入购物车-->
+<!--                            </div>-->
+<!--                            <div class="collectBtn fl">-->
+<!--                                <span class="iconfont icon-shoucang"></span>-->
+<!--                                收藏-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
+            </ul>
+            <ul class="show_pageBtns clearfix">
+                <li class="lastOne">上一页</li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li class="ellipcis">...</li>
+                <li class="nextOne">下一页</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 13. 页面底部 -->
+    <div class="footer">
+        <div class="wrap">
+            <div class="footer_nav clearfix">
+                <dl class="fl">
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="#!">购物流程</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">支付方式</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">配送方式</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="#!">售后政策</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">价格保护</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">退款说明</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">返修/退换货</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">取消顶单</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="#!">上门自提</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">211限时达</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">配送服务查询</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">配送费收取标准</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">海外配送</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="#!">网上支付</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">支付宝支付</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">邮局汇款</a>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt>用户帮助</dt>
+                    <dd>
+                        <a href="#!">免费注册</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">找回密码</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">优惠券使用</a>
+                    </dd>
+                    <dd>
+                        <a href="#!">常见问题</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="footer_copy">
+            <p>
+                Copyright@ 2010-2016小U商城版权所有保留-切权利
+            </p>
+            <p style="padding-top: 12px;">
+                京ICP备10218183号 京ICP证161188号京公网安备11010802020593号出版物经营许可证新出发京批字第直130052号
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        if(localStorage.username){
+            $(".topNav1_registerAndLogin").html("欢迎"+localStorage.username).css({
+                "paddingLeft": "168px",
+                "color": "#f15200"
+            })
+        }
+    </script>
+    <script type="text/javascript" src="./js/list.js"></script>
+    <script type="text/javascript">
+
+    </script>
+
+</body>
+</html>

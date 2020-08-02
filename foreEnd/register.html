@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+    <script src="./js/jquery.js"></script>
+    <script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+    <link rel="stylesheet" href="./css/common3.css">
+    <link rel="stylesheet" href="./css/regiter.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1923964_jnzt07y6pq.css">
+    <title>注册</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header wrap clearfix">
+        <a href="./index.html" class="fl">
+            <img src="./images/logo.jpg" alt="">
+        </a>
+        <p class="title fl" >欢迎注册</p>
+    </div>
+    <!-- 主体 -->
+    <div class="body">
+        <div class="register_form">
+            <h2 class="register_form_title">注册账号</h2>
+            <form action="http://localhost:3000/register" method="post">
+                <div class="account register_form_common borderLight active clearfix">
+                    <span class="iconfont icon-ziyuan fl"></span>
+                    <input type="text" class="fl onfocus username" placeholder="请输入邮箱" name="username">
+                </div>
+                <p class="tip" style="clear:both;">请输入邮箱/邮箱已注册/邮箱格式错误</p>
+                <div class="account register_form_common borderLight clearfix">
+                    <span class="iconfont icon-mima  fl"></span>
+                    <input type="password"  autocomplete="off" placeholder="密码" name="password" class="onfocus password">
+                </div>
+                <p class="tip" style="clear:both;">请输入密码/密码格式为6-20为字母数组组合</p>
+                <div class="yanzhengma" id="yanzhengma">
+                    <input type="text" class="yangzhengma_input onfocus borderLight">
+                    <div id="codes"></div>
+                </div>
+
+                <p class="tip">请输入验证码</p>
+                <input  class="registerBtn" type="button" value="注册" />
+                <div class="other">
+                   已有账号 <a href="./login.html">去登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="wrap">
+            <p>
+                Copyright@ 2010-2016小U商城版权所有保留-切权利
+            </p>
+            <p style="padding-top: 16px;">
+                京ICP备10218183号 京ICP证161188号京公网安备11010802020593号出版物经营许可证新出发京批字第直130052号
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/registerAndLogin.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
+</body>
+</html>

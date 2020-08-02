@@ -1,0 +1,42 @@
+.body {
+    padding-bottom: 42px;
+    padding-top: 33px;
+    background-color: #f6f6f6;
+}
+.register_form {
+    background-color: white;
+    width: 384px;
+    padding: 0px 183px;
+    margin: 0 auto;
+    border-top: 3px solid #f26f10;
+    line-height: 1;
+    box-shadow: -2px 2px 6px #ccc;
+}
+.register_form_title {
+    line-height: 89px;
+    font-size: 23px;
+    text-align: center;
+    font-weight: normal;
+}
+.register_form_common {
+    margin-bottom: 10px;
+}
+.register_form   .tip {
+    color: #f15200;
+    padding-bottom: 22px;
+    font-size: 12px;
+    height: 12px;
+}
+.register_form   .tip:last-of-type {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.register_form .other {
+    padding-top: 35px;
+    padding-bottom: 44px;
+    text-align: center;
+    font-size: 12px;
+}
+.register_form .other > a {
+    color: #f17822;
+}

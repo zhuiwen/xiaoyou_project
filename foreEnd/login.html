@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+    <script src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/registerAndLogin.js"></script>
+    <script type="text/javascript" src="./js/getCode.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+    <script src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+    <link rel="stylesheet" href="./css/common3.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1923964_jnzt07y6pq.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header wrap clearfix">
+        <a href="./index.html" class="fl">
+            <img src="./images/logo.jpg" alt="">
+        </a>
+        <p class="title fl" >欢迎登录</p>
+    </div>
+    <div class="login_form">
+        <div class="wrap">
+            <div class="fr">
+                <form action="http://localhost:3000/login" method="post">
+                    <div class="tip"></div>
+                    <div class="login_form_title">登录</div>
+                    <div class="account borderLight login_form_common active">
+                        <span class="iconfont icon-ziyuan fl"></span>
+                        <input type="text" name="username" class="fl onfocus username" placeholder="手机号/会员名/邮箱"  />
+                    </div>
+                    <div class="account borderLight login_form_common">
+                        <span class="iconfont icon-mima  fl"></span>
+                        <input type="password" name = "password" autocomplete="off" placeholder="密码" class="onfocus password" />
+                    </div>
+                    <div class="yanzhengma">
+                        <input type="text" class="borderLight onfocus yangzhengma_input">
+                        <div></div>
+                    </div>
+                    <button class="loginBtn" type="button">登录</button>
+                    <div class="other">
+                        <div class="fl">
+                            <input type="checkbox" name="isAutoLogin">自动登录
+                        </div>
+                        <a class="fr" href="#1">忘记密码?</a>
+                    </div>
+                </form>
+                <div class="login_form_methods clearfix">
+                    <ul class="fl">
+                        <li>
+                            <a href="#1">
+                                <span></span>QQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#1">
+                                <span></span>微博
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#1"><span></span>微信</a>
+                        </li>
+                    </ul>
+                    <a href="./register.html" class="login_form_bottom_regist">
+                        立即注册
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <p>
+                Copyright@ 2010-2016小U商城版权所有保留-切权利
+            </p>
+            <p style="padding-top: 16px;">
+                京ICP备10218183号 京ICP证161188号京公网安备11010802020593号出版物经营许可证新出发京批字第直130052号
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/*登录表单*/
+.login_form {
+    overflow: hidden;
+    background-color: #fe6c6c;
+    position: relative;
+}
+.login_form .tip {
+    font-size: 14px;
+    line-height: 14px;
+    width: 280px;
+    position: absolute;
+    top: 85px;
+}
+.login_form > .wrap {
+    background: url("../images/login/login.jpg") no-repeat left center ;
+    height: 450px;
+}
+.login_form form {
+    padding-top: 26px;
+    padding-left: 35px;
+    padding-bottom: 16px;
+    padding-right: 35px;
+    background: white;
+    width: 280px;
+    margin-top: 34px;
+    border-bottom: 1px solid #efefef;
+}
+.login_form_title {
+    font-size: 16px;
+    padding-bottom: 26px;
+    color: #333;
+}
+.login_form .other {
+    padding-top: 14px;
+    padding-bottom: 30px;
+    color: #6e6e6e;
+}
+.login_form .other input[type=checkbox]{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.login_form .other a {
+    color: #6e6e6e;
+}
+.login_form_methods {
+    padding-top: 18px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: white;
+    font-size: 12px;
+}
+.login_form_methods > ul {
+    margin-right: 34px;
+}
+.login_form_methods > ul > li {
+    float:  left;
+    padding-right: 30px;
+}
+.login_form_methods > ul > li > a {
+    color: #656565;
+}
+.login_form_methods > ul > li > a > span {
+    display: inline-block;
+    vertical-align: middle;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+
+}
+.login_form_methods > ul > li:nth-of-type(1) > a > span {
+    background-color: #08a5ed;
+}
+.login_form_methods > ul > li:nth-of-type(2) > a > span {
+    background-color: #dc2c1a;
+}
+.login_form_methods > ul > li:nth-of-type(3) > a > span {
+    background-color: #1dc83f;
+}
+.login_form_methods > a{
+    font-size: 14px;
+    color: #ea720d;
+}
+.login_form_common input {
+    width: 233px!important;
+}
+.yangzhengma_input {
+    width: 127px !important;
+}
